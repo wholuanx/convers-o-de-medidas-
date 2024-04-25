@@ -1,0 +1,47 @@
+n = float(input('Digite o número que deseja converter: '))
+op = int(input('Digite a unidade deste número: (1) Milhas, (2) KM, (3) Metros, (4) Pés, (5) Polegadas ou (6) Centímetros: '))
+
+if op == 1:
+    print((n * 1.6093), "KM")
+    print((n * 1760), "Metros")
+    print((n * 5280), "Pés")
+    print((n * 63360), "Polegadas")
+    print((n * 1609.34 * 100), "Centímetros")
+
+elif op == 2:
+    print((n / 1.609), "Milhas")
+    print((n * 1000), "Metros")
+    print((n * 3281), "Pés")
+    print((n * 39370), "Polegadas")
+    print((n * 100000), "Centímetros")
+
+elif op == 3:
+    print((n * 1609), "Milhas")
+    print((n * 1000), "KM")
+    print((n * 3.281), "Pés")
+    print((n * 39.37), "Polegadas")
+    print((n * 100), "Centímetros")
+     
+elif op == 4:
+    print((n / 5280), "Milhas")
+    print((n / 3281), "KM")
+    print((n / 3.281), "Metros")
+    print((n * 12), "Polegadas")
+    print((n * 30.48), "Centímetros")
+
+elif op == 5:
+    print((n / 63360), "Milhas")
+    print((n / 39370), "KM")
+    print((n / 39.37), "Metros")
+    print((n / 12), "Pés")
+    print((n * 2.54), "Centímetros")
+
+elif op == 6:
+    print((n / 160900), "Milhas")
+    print((n / 100000), "KM")
+    print((n / 100), "Metros")
+    print((n * 30.48), "Pés")
+    print((n * 2.54), "Polegadas") 
+
+else:
+    print("Não foi possível converter este número")
